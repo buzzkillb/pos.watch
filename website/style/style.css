@@ -1,0 +1,41 @@
+body{
+  background:url(https://i.imgur.com/wqPUQCa.png);
+  background-size:cover;
+}
+
+#container, .nes-container{
+      width: 85em;
+      margin: 2em auto;
+      position: relative;
+    }
+
+    .nes-select{
+      width: 15em;
+      margin-top:0.5rem; 
+    }
+
+    label[for="success_select"]{
+      padding-top:1rem;
+    }
+
+#submit{
+  margin-top:2rem;
+}
+
+    #info{
+      width:75em;
+      margin: 2em auto;
+    }
+
+@media(max-width: 450px){
+  #container{
+  width:95%;
+    margin:3% 3%;
+  }
+  
+   #info{
+      width:90%;
+     font-size:0.8rem;
+      margin: 2em 2%;
+    }
+}
