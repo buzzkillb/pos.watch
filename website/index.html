@@ -1,0 +1,93 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>[D] Staking Calculator | Denarius</title>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://pos.watch">
+    <meta name="twitter:title" content="[D] Staking Calculator">
+    <meta name="twitter:description" content="Denarius Staking Calculator">
+    <meta name="twitter:image" content="https://i.imgur.com/lCvgFft.png?1">
+
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <!-- latest -->
+  <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  
+  
+
+</head>
+
+<body>
+  <div id="container" class="nes-container with-title is-dark">
+                <p class="title">pos.watch input form</p>
+        
+                <label for="name_field">Amount of Denarius <i class="nes-icon coin is-medium"></i>: </label>
+                <div class="nes-field">
+                  <input type="text" class="nes-input is-dark" placeholder="5000" id="denarius" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\.\d{8})\d+/g, '$1');" />
+                </div>
+
+
+                
+
+                <section id="submit">
+<button type="button" class="nes-btn is-primary">Stake</button>
+
+                  </section>
+                  
+                  
+                  <div id="info" class="nes-container is-dark with-title is-centered">
+                      <p class="title">TeamPoS</p>
+
+
+
+
+                      <p><i class="nes-charmander"></i></a></p>
+                        <table class="nes-table is-bordered is-dark is-centered">
+        <thead>
+                <tr>
+                        <th><h1>Heroes<span id="height"></span></h1></th>
+                        <th><h1>Percent</h1></th>
+                        <th><h1>Daily</h1></th>
+                        <th><h1>Monthly</h1></th>
+                        <th><h1>Yearly</h1></th>
+                </tr>
+        </thead>
+        <tbody>
+                <tr>
+                        <td>Staker</td>
+                        <td>67%</td>
+                        <td><span id="stakingPayDaily"></span></td>
+                        <td><span id="stakingPayMonthly"></span></td>
+                      <td><span id="stakingPay"></span></td>
+                </tr>
+                <tr>
+                        <td>FortunaStake</td>
+                        <td>33%</td>
+                        <td><span id="fortunastakePayDaily"></span></td>
+                        <td><span id="fortunastakePayMonthly"></span></td>
+                        <td><span id="fortunastakePay"></span></td>
+                </tr>
+                <tr>
+                        <td>Total (6% APR)</td>
+                        <td>100%</td>
+                        <td><span id="totalPayDaily"></span></td>
+                        <td><span id="totalPayMonthly"></span></td>
+                        <td><span id="totalPayYearly"></span></td>
+                </tr>
+                
+        </tbody>
+</table>
+                  
+                  
+        </div>
+        
+        <i class="nes-icon is-large heart"></i> <i class="nes-icon twitter is-large"></i> <i class="nes-icon github is-large"></i> <i class="nes-icon reddit is-large"></i>
+
+  <script type="text/javascript" src="js/script.js?version=0.01337"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+</body>
+</html>
