@@ -1,0 +1,24 @@
+$('#denarius').keyup(function(ev){
+    var total = $('#denarius').val() * 1;
+    $('#total').html((total).toFixed(8));
+    var denariusapr = 0.06;
+    $('#denariusAPR').html((denariusapr).toFixed(2));
+    var fortunastakepay = total * denariusapr * 0.33;
+    $('#fortunastakePay').html((fortunastakepay).toFixed(8));
+    var fortunastakepaydaily = (total * denariusapr * 0.33) / 365;
+    $('#fortunastakePayDaily').html((fortunastakepaydaily).toFixed(8));
+    var fortunastakepaymonthly = (total * denariusapr * 0.33) / 12;
+    $('#fortunastakePayMonthly').html((fortunastakepaymonthly).toFixed(8));    
+    var stakingpay = total * denariusapr * 0.67;
+    $('#stakingPay').html((stakingpay).toFixed(8));
+    var stakingpaydaily = (total * denariusapr * 0.67) / 365;
+    $('#stakingPayDaily').html((stakingpaydaily).toFixed(8));    
+    var stakingpaymonthly = (total * denariusapr * 0.67) / 12;
+    $('#stakingPayMonthly').html((stakingpaymonthly).toFixed(8));
+    var totalpaydaily = (total * denariusapr * 1) / 365;
+    $('#totalPayDaily').html((totalpaydaily).toFixed(8)); 
+    var totalpaymonthly = (total * denariusapr * 1) / 12;
+    $('#totalPayMonthly').html((totalpaymonthly).toFixed(8));
+    var totalpayyearly = (total * denariusapr * 1);
+    $('#totalPayYearly').html((totalpayyearly).toFixed(8));
+});
